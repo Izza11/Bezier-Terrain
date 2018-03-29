@@ -25,7 +25,7 @@ public class BezierPatch : MonoBehaviour {
 		startIndexTri = 0;
 	}
 		
-	void Update() {
+	void Update() {  // runs every frame
 
 
 		cv[1,0].y = 3*scaleF * Mathf.Sin(Time.time);
@@ -49,7 +49,7 @@ public class BezierPatch : MonoBehaviour {
 	
 	}
 
-	void OnPostRender() {
+	void OnPostRender() {   // runs every frame
 		DrawSurface (ref v, new Vector3 (0, 0, 0));
 	}
 
