@@ -20,7 +20,6 @@ public class BezierPatch : MonoBehaviour {
 
 		v = new List<Triangle>();
 		InitArray(stacks, slices);
-		DisplayPolygon (cv);
 		startIndexTri = 0;
 	}
 		
@@ -50,20 +49,6 @@ public class BezierPatch : MonoBehaviour {
 
 	void OnPostRender() {   // runs every frame
 		DrawSurface (ref v, new Vector3 (0, 0, 0));
-	}
-
-
-	void DisplayPolygon(Vector3[,] cv) {
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; j < 3; j++) {
-				Debug.DrawLine(cv[i,j], cv[i,j+1], Color.red);
-			}
-		}
-
-		for (int i = 0; i < 3; i++)
-			for (int j = 0; j < 4; j++)
-				Debug.DrawLine(cv[i,j], cv[i + 1,j], Color.red);
-	
 	}
 
 
