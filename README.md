@@ -3,5 +3,7 @@
 - Bezier Terrain made from 4 bezier patches
 - animation of control points using Sin(time) function
 
+The code files are contained in the Asset folder. 
+
 Download the BTerrain.exe along with the BezierTerrain_Data folder and run the .exe file.
 Use the mouse movement and buttons to rotate the scene
