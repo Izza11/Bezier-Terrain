@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//[RequireComponent(typeof(MeshFilter))]
 public class BezierPatch : MonoBehaviour {
 
 	public Material mat;
