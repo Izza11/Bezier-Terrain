@@ -139,7 +139,7 @@ public class BezierPatch : MonoBehaviour {
 
 
 
-	void DrawSurface(ref List<Triangle> v, Vector3 color) {
+	void DrawSurface(ref List<Triangle> v, Vector3 color) {  // renders the triangles 
 		GL.PushMatrix();
 		mat.SetPass(0);
 		GL.Begin(GL.TRIANGLES);
